@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>sqli on 0xlogs</title>
-    <link>https://example.com/tags/sqli/</link>
+    <link>https://eliecer-j.github.io/0xlogs/tags/sqli/</link>
     <description>Recent content in sqli on 0xlogs</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© eliecer_j</copyright>
-    <lastBuildDate>Wed, 06 Sep 2023 02:01:58 +0530</lastBuildDate><atom:link href="https://example.com/tags/sqli/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 06 Sep 2023 02:01:58 +0530</lastBuildDate><atom:link href="https://eliecer-j.github.io/0xlogs/tags/sqli/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Marketplace :$%__ Tryhackme 🤖</title>
-      <link>https://example.com/posts/marketplace/</link>
+      <link>https://eliecer-j.github.io/0xlogs/posts/marketplace/</link>
       <pubDate>Wed, 06 Sep 2023 02:01:58 +0530</pubDate>
       
-      <guid>https://example.com/posts/marketplace/</guid>
+      <guid>https://eliecer-j.github.io/0xlogs/posts/marketplace/</guid>
       <description>Escaneo de puertos Comencé con el escaneo de nmap para encontrar puertos
 $ nmap -sC -sV -Pn 10.10.144.119 22/tcp open ssh OpenSSH 7.6p1 Ubuntu 4ubuntu0.3 (Ubuntu Linux; protocol 2.0) | ssh-hostkey: | 2048 c8:3c:c5:62:65:eb:7f:5d:92:24:e9:3b:11:b5:23:b9 (RSA) | 256 06:b7:99:94:0b:09:14:39:e1:7f:bf:c7:5f:99:d3:9f (ECDSA) |_ 256 0a:75:be:a2:60:c6:2b:8a:df:4f:45:71:61🆎60:b7 (ED25519) 80/tcp open http nginx 1.19.2 | http-robots.txt: 1 disallowed entry |_/admin |_http-server-header: nginx/1.19.2 |_http-title: The Marketplace 32768/tcp open http Node.js (Express middleware) | http-robots.txt: 1 disallowed entry |_/admin |_http-title: The Marketplace Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel miramos el sitio web ya que tiene el puerto 80 disponible</description>
     </item>

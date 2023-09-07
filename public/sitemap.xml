@@ -2,45 +2,45 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://example.com/</loc>
+    <loc>https://eliecer-j.github.io/0xlogs/</loc>
     <lastmod>2023-09-06T02:01:58+05:30</lastmod>
   </url><url>
-    <loc>https://example.com/tags/docker/</loc>
+    <loc>https://eliecer-j.github.io/0xlogs/tags/docker/</loc>
     <lastmod>2023-09-06T02:01:58+05:30</lastmod>
   </url><url>
-    <loc>https://example.com/posts/marketplace/</loc>
+    <loc>https://eliecer-j.github.io/0xlogs/posts/marketplace/</loc>
     <lastmod>2023-09-06T02:01:58+05:30</lastmod>
   </url><url>
-    <loc>https://example.com/posts/</loc>
+    <loc>https://eliecer-j.github.io/0xlogs/posts/</loc>
     <lastmod>2023-09-06T02:01:58+05:30</lastmod>
   </url><url>
-    <loc>https://example.com/tags/sqli/</loc>
+    <loc>https://eliecer-j.github.io/0xlogs/tags/sqli/</loc>
     <lastmod>2023-09-06T02:01:58+05:30</lastmod>
   </url><url>
-    <loc>https://example.com/tags/</loc>
+    <loc>https://eliecer-j.github.io/0xlogs/tags/</loc>
     <lastmod>2023-09-06T02:01:58+05:30</lastmod>
   </url><url>
-    <loc>https://example.com/tags/tryhackme/</loc>
+    <loc>https://eliecer-j.github.io/0xlogs/tags/tryhackme/</loc>
     <lastmod>2023-09-06T02:01:58+05:30</lastmod>
   </url><url>
-    <loc>https://example.com/tags/web/</loc>
+    <loc>https://eliecer-j.github.io/0xlogs/tags/web/</loc>
     <lastmod>2023-09-06T02:01:58+05:30</lastmod>
   </url><url>
-    <loc>https://example.com/tags/medium/</loc>
+    <loc>https://eliecer-j.github.io/0xlogs/tags/medium/</loc>
     <lastmod>2023-08-30T02:01:58+05:30</lastmod>
   </url><url>
-    <loc>https://example.com/posts/mr-robot-ctf/</loc>
+    <loc>https://eliecer-j.github.io/0xlogs/posts/mr-robot-ctf/</loc>
     <lastmod>2023-08-30T02:01:58+05:30</lastmod>
   </url><url>
-    <loc>https://example.com/tags/suid/</loc>
+    <loc>https://eliecer-j.github.io/0xlogs/tags/suid/</loc>
     <lastmod>2023-08-30T02:01:58+05:30</lastmod>
   </url><url>
-    <loc>https://example.com/archives/</loc>
+    <loc>https://eliecer-j.github.io/0xlogs/archives/</loc>
     <lastmod>2019-05-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://example.com/about/</loc>
+    <loc>https://eliecer-j.github.io/0xlogs/about/</loc>
     <lastmod>2019-02-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://example.com/categories/</loc>
+    <loc>https://eliecer-j.github.io/0xlogs/categories/</loc>
   </url>
 </urlset>

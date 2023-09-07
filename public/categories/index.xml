@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on 0xlogs</title>
-    <link>https://example.com/categories/</link>
+    <link>https://eliecer-j.github.io/0xlogs/categories/</link>
     <description>Recent content in Categories on 0xlogs</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>© eliecer_j</copyright><atom:link href="https://example.com/categories/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>© eliecer_j</copyright><atom:link href="https://eliecer-j.github.io/0xlogs/categories/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
