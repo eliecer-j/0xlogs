@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>medium on 0xlogs</title>
+    <link>https://example.com/tags/medium/</link>
+    <description>Recent content in medium on 0xlogs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>© eliecer_j</copyright>
+    <lastBuildDate>Wed, 30 Aug 2023 02:01:58 +0530</lastBuildDate><atom:link href="https://example.com/tags/medium/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Mr Robot CTF::__. Tryhackme 🤖</title>
+      <link>https://example.com/posts/mr-robot-ctf/</link>
+      <pubDate>Wed, 30 Aug 2023 02:01:58 +0530</pubDate>
+      
+      <guid>https://example.com/posts/mr-robot-ctf/</guid>
+      <description>Enumeración $ nmap -p- -Pn -n --min-rate 2000 -vvv 10.10.9.68 Host is up, received user-set (0.34s latency). Scanned at 2023-08-30 10:17:29 -05 for 67s Not shown: 65532 filtered tcp ports (no-response) PORT STATE SERVICE REASON 22/tcp closed ssh reset ttl 61 80/tcp open http syn-ack ttl 61 443/tcp open https syn-ack ttl 61 Vemos que hay un servidor web ejecutándose. Entonces, mientras lo exploramos, ejecutemos un análisis Dirsearch para encontrar archivos y directorios ocultos.</description>
+    </item>
+    
+  </channel>
+</rss>

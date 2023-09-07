@@ -1,0 +1,53 @@
+baseURL = "https://eliecer-j.github.io/0xlogs/"
+languageCode = "en-us"
+title = "0xlogs"
+theme="archie"
+copyright = "© eliecer_j"
+pygmentsstyle = "monokai"
+pygmentscodefences = true
+pygmentscodefencesguesssyntax = true
+paginate = 4
+enableEmoji = true
+
+
+
+
+[params]
+	mode="toggle"
+	useCDN=false
+	subtitle = "Minimal logs  ::__ .. 🤠"
+	customcss = ["css/first.css"]
+
+	
+
+[[params.social]]
+name = "GitHub"
+icon = "github"
+url = "https://github.com/eliecer-j"
+
+
+[[params.social]]
+name = "Linkedln"
+icon = "linkedin"
+url = "www.linkedin.com/in/eliecerj"
+
+
+[[menu.main]]
+name = "Home"
+url = "/"
+weight = 1
+
+[[menu.main]]
+name = "All posts"
+url = "/posts"
+weight = 2
+
+[[menu.main]]
+name = "About"
+url = "/about"
+weight = 3
+
+[[menu.main]]
+name = "Tags"
+url = "/tags"
+weight = 4

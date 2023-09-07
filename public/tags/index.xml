@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on 0xlogs</title>
+    <link>https://example.com/tags/</link>
+    <description>Recent content in Tags on 0xlogs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>© eliecer_j</copyright>
+    <lastBuildDate>Wed, 06 Sep 2023 02:01:58 +0530</lastBuildDate><atom:link href="https://example.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>docker</title>
+      <link>https://example.com/tags/docker/</link>
+      <pubDate>Wed, 06 Sep 2023 02:01:58 +0530</pubDate>
+      
+      <guid>https://example.com/tags/docker/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>sqli</title>
+      <link>https://example.com/tags/sqli/</link>
+      <pubDate>Wed, 06 Sep 2023 02:01:58 +0530</pubDate>
+      
+      <guid>https://example.com/tags/sqli/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>tryhackme</title>
+      <link>https://example.com/tags/tryhackme/</link>
+      <pubDate>Wed, 06 Sep 2023 02:01:58 +0530</pubDate>
+      
+      <guid>https://example.com/tags/tryhackme/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>web</title>
+      <link>https://example.com/tags/web/</link>
+      <pubDate>Wed, 06 Sep 2023 02:01:58 +0530</pubDate>
+      
+      <guid>https://example.com/tags/web/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>medium</title>
+      <link>https://example.com/tags/medium/</link>
+      <pubDate>Wed, 30 Aug 2023 02:01:58 +0530</pubDate>
+      
+      <guid>https://example.com/tags/medium/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>suid</title>
+      <link>https://example.com/tags/suid/</link>
+      <pubDate>Wed, 30 Aug 2023 02:01:58 +0530</pubDate>
+      
+      <guid>https://example.com/tags/suid/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
