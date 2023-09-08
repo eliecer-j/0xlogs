@@ -1,5 +1,5 @@
 ---
-title: "Marketplace :$%__ Tryhackme"
+title: "Marketplace | TryHackMe"
 date: 2023-09-06T02:01:58+05:30
 description: "¿Puedes hacerte cargo de la infraestructura de The Marketplace? "
 tags: [tryhackme, sqli, docker, web]

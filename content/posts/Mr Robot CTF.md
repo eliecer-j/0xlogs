@@ -1,5 +1,5 @@
 ---
-title: "Mr Robot CTF::__. Tryhackme 🤖"
+title: "Mr Robot CTF | Tryhackme 🤖"
 date: 2023-08-30T02:01:58+05:30
 description: "Esta es una máquina virtual destinada para usuarios principiantes/intermedios. Hay 3 llaves ocultas ubicadas en la máquina, ¿puedes encontrarlas? "
 tags: [tryhackme, medium, suid]

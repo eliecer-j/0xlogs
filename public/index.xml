@@ -7,9 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© eliecer_j</copyright>
-    <lastBuildDate>Wed, 06 Sep 2023 02:01:58 +0530</lastBuildDate><atom:link href="https://eliecer-j.github.io/0xlogs/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 07 Sep 2023 02:01:58 +0530</lastBuildDate><atom:link href="https://eliecer-j.github.io/0xlogs/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Marketplace :$%__ Tryhackme</title>
+      <title>BoilerCTF | TryHackMe 🔥</title>
+      <link>https://eliecer-j.github.io/0xlogs/posts/boilerctf/</link>
+      <pubDate>Thu, 07 Sep 2023 02:01:58 +0530</pubDate>
+      
+      <guid>https://eliecer-j.github.io/0xlogs/posts/boilerctf/</guid>
+      <description>Nmap Escaneo de puertos tcp, nmap nos muestra el puerto ftp (21), http (80), Webmin (10000) y el puerto ssh (55007) abiertos
+$ nmap -p- -Pn -n -sVC --min-rate 2000 10.10.24.224 PORT STATE SERVICE REASON VERSION 21/tcp open ftp syn-ack vsftpd 3.0.3 |_ftp-anon: Anonymous FTP login allowed (FTP code 230) | ftp-syst: | STAT: | FTP server status: | Connected to ::ffff:10.6.48.252 | Logged in as ftp | TYPE: ASCII | No session bandwidth limit | Session timeout in seconds is 300 | Control connection is plain text | Data connections will be plain text | At session startup, client count was 2 | vsFTPd 3.</description>
+    </item>
+    
+    <item>
+      <title>Marketplace | TryHackMe</title>
       <link>https://eliecer-j.github.io/0xlogs/posts/marketplace/</link>
       <pubDate>Wed, 06 Sep 2023 02:01:58 +0530</pubDate>
       
@@ -19,7 +29,7 @@ $ nmap -sC -sV -Pn 10.10.144.119 22/tcp open ssh OpenSSH 7.6p1 Ubuntu 4ubuntu0.3
     </item>
     
     <item>
-      <title>Mr Robot CTF::__. Tryhackme 🤖</title>
+      <title>Mr Robot CTF | Tryhackme 🤖</title>
       <link>https://eliecer-j.github.io/0xlogs/posts/mr-robot-ctf/</link>
       <pubDate>Wed, 30 Aug 2023 02:01:58 +0530</pubDate>
       

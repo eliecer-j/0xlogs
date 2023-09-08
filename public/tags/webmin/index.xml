@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>webmin on 0xlogs</title>
+    <link>https://eliecer-j.github.io/0xlogs/tags/webmin/</link>
+    <description>Recent content in webmin on 0xlogs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>© eliecer_j</copyright>
+    <lastBuildDate>Thu, 07 Sep 2023 02:01:58 +0530</lastBuildDate><atom:link href="https://eliecer-j.github.io/0xlogs/tags/webmin/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>BoilerCTF | TryHackMe 🔥</title>
+      <link>https://eliecer-j.github.io/0xlogs/posts/boilerctf/</link>
+      <pubDate>Thu, 07 Sep 2023 02:01:58 +0530</pubDate>
+      
+      <guid>https://eliecer-j.github.io/0xlogs/posts/boilerctf/</guid>
+      <description>Nmap Escaneo de puertos tcp, nmap nos muestra el puerto ftp (21), http (80), Webmin (10000) y el puerto ssh (55007) abiertos
+$ nmap -p- -Pn -n -sVC --min-rate 2000 10.10.24.224 PORT STATE SERVICE REASON VERSION 21/tcp open ftp syn-ack vsftpd 3.0.3 |_ftp-anon: Anonymous FTP login allowed (FTP code 230) | ftp-syst: | STAT: | FTP server status: | Connected to ::ffff:10.6.48.252 | Logged in as ftp | TYPE: ASCII | No session bandwidth limit | Session timeout in seconds is 300 | Control connection is plain text | Data connections will be plain text | At session startup, client count was 2 | vsFTPd 3.</description>
+    </item>
+    
+  </channel>
+</rss>
